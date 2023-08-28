@@ -1,17 +1,9 @@
-import { rgba } from 'polished';
-
 import styled from 'styled-components';
 import IntroBackground from '../../../../assets/intro-background.svg';
 
 export const IntroContainer = styled.section`
-  padding-top: 4.125rem;
   margin-bottom: 2rem;
-  background: ${({ theme }) => `url(${IntroBackground}) no-repeat center, linear-gradient(
-    0deg,
-    ${theme.colors.white} 0%,
-    ${rgba(theme.colors.background, 0.2)} 50%,
-    ${theme.colors.background} 100%
-  )`};
+  background: ${() => `url(${IntroBackground}) no-repeat center`};
   background-size: cover;
 `;
 

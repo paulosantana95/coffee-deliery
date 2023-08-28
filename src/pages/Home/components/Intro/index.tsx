@@ -8,16 +8,16 @@ import {
   IntroContent,
   SpanItems,
 } from "./styles";
-import { RegularText, TitleTextProps } from "../../../../components/Typography";
+import { RegularText, TitleText } from "../../../../components/Typography";
 
 export function Intro() {
   return (
     <IntroContainer>
       <IntroContent className="container">
         <IntroContainerTitle>
-          <TitleTextProps size="xl">
+          <TitleText size="xl">
             Encontre o café perfeito para qualquer hora do dia
-          </TitleTextProps>
+          </TitleText>
           <RegularText size="l" color="subtitle">
             Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
             hora
