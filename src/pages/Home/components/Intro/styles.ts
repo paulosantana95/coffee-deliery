@@ -1,11 +1,17 @@
+import { rgba } from 'polished';
+
 import styled from 'styled-components';
 import IntroBackground from '../../../../assets/intro-background.svg';
 
 export const IntroContainer = styled.section`
   padding-top: 4.125rem;
-  padding-bottom: 4.125rem;
   margin-bottom: 2rem;
-  background: ${() => `url(${IntroBackground}) no-repeat center`};
+  background: ${({ theme }) => `url(${IntroBackground}) no-repeat center, linear-gradient(
+    0deg,
+    ${theme.colors.white} 0%,
+    ${rgba(theme.colors.background, 0.2)} 50%,
+    ${theme.colors.background} 100%
+  )`};
   background-size: cover;
 `;
 
@@ -24,21 +30,7 @@ export const IntroContainerTitle = styled.div`
   align-items: flex-start;
   justify-content: center;
   gap: 1rem;
-  
-  h1 {
-    font-size: ${({ theme }) => theme.fontSizes['title-xl']};
-    color: ${({ theme }) => theme.colors['base-title']};
-    font-weight: 800;
-    line-height: 130%;
-  }
-  
-  p {
-    font-size: ${({ theme }) => theme.fontSizes['text-l']};
-    color: ${({ theme }) => theme.colors['base-subtitle']};
-  }
   `;
-
-
 
 export const IntroContainerItems = styled.div`
   padding-top: 4.4688rem;
@@ -51,14 +43,6 @@ export const IntroContainerItems = styled.div`
     justify-content: center;
     align-items: center;
     gap: 0.75rem;
-    
-    p {
-      font-family: ${({ theme }) => theme.fonts.regular};
-      color: ${({ theme }) => theme.colors['base-text']};
-      font-size: ${({ theme }) => theme.fontSizes['text-m']};
-      font-weight: 400;
-      line-height: 130%;
-    }
   }
   `;
 
@@ -78,4 +62,5 @@ export const SpanItems = styled.span<SpanVariantProps>`
 
 export const IntroBannerImage = styled.div`
   padding-top: 5.75rem;
+  padding-bottom: 5.75rem;
 `
