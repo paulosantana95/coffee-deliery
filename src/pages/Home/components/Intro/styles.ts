@@ -28,7 +28,8 @@ export const IntroContainerItems = styled.div`
   padding-top: 4.4688rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem;
+  column-gap: 2.5rem;
+  row-gap: 1.25rem;
   
   div {
     display: flex;

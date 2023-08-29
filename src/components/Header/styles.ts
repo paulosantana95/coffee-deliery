@@ -2,10 +2,16 @@ import styled, { css } from 'styled-components';
 
 export const HeaderContainer = styled.header`
   display: flex;
+  width: 100%;
+  height: 6.5rem;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   background: ${({ theme }) => theme.colors.background};
-  margin: 2rem auto;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
 
   nav {
     display: flex;
