@@ -23,16 +23,17 @@ interface LinkButtonProps {
   variant: "purple" | "yellow";
 }
 
-export const LinkButton = styled.a<LinkButtonProps>`
+export const LinkButton = styled.button<LinkButtonProps>`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.25rem;
   border-radius: 5px;
+  border: none;
   padding: 0.5rem;
   font-size: ${({ theme }) => theme.fontSizes['text-s']};
 
-  ${({ variant, theme }) => css`
+  ${({ theme, variant }) => css`
     background: ${theme.colors[`${variant}-light`]};
     color: ${variant === 'purple' ?
       theme.colors[variant] : theme.colors[`${variant}-dark`]};

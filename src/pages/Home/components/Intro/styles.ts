@@ -50,7 +50,7 @@ export const SpanItems = styled.span<SpanVariantProps>`
   padding: 0.5rem;
   border-radius: 100%;
   color: ${({ theme }) => theme.colors.white};
-  background-color: ${({ theme, variant }) => theme.colors[`${variant}`]}
+  background: ${({ theme, variant }) => theme.colors[`${variant}`]}
 `;
 
 export const IntroBannerImage = styled.div`

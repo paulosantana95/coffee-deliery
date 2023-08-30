@@ -1,7 +1,10 @@
+import { CheckoutOrderForm } from "./components/CheckoutOrderForm";
+import { CheckoutOrderContainer } from "./styles";
+
 export function Checkout() {
   return (
-    <div>
-      <h1>Checkout</h1>
-    </div>
+    <CheckoutOrderContainer className="container">
+      <CheckoutOrderForm />
+    </CheckoutOrderContainer>
   );
 }
