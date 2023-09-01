@@ -18,7 +18,7 @@ export function CoffeeCartCard() {
           <ActionsContainer>
             <QuantityInput size="small" />
             <RemoveButton>
-              <Trash size={24} />
+              <Trash size={16} />
               Remover
             </RemoveButton>
           </ActionsContainer>

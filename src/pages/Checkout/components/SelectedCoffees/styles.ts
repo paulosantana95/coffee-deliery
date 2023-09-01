@@ -25,4 +25,8 @@ export const ConfirmationSectionContainer = styled.section`
     flex-direction: row;
     justify-content: space-between;
   }
+
+  button {
+    margin-top: 1.5rem;
+  }
 `;

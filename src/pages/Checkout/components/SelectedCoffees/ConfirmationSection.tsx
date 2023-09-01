@@ -15,7 +15,7 @@ export function ConfirmationSection() {
       </div>
       <div>
         <RegularText weight="700" color="subtitle" size="l">
-          Total de itens
+          Total
         </RegularText>
         <RegularText weight="700" color="subtitle" size="l">
           R$ 29,70
