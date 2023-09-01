@@ -34,6 +34,9 @@ export const defaultTheme = {
     'text-m': '1rem',
     'text-s': '0.875rem',
     'text-xs': '0.75rem',
+    'tag': '0.625rem',
+    'button-g': '0.875rem',
+    'button-m': '0.75rem'
   },
   fonts: {
     regular: "'Roboto'",

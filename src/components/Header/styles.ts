@@ -15,7 +15,7 @@ export const HeaderContainer = styled.header`
 
   nav {
     display: flex;
-    gap: 0.75rem; 
+    gap: 0.75rem;
   }
 `;
 

@@ -17,7 +17,7 @@ export const TitleText = styled.h1<TitleTextProps>`
   font-size: ${({ theme, size }) => theme.fontSizes[`title-${size ?? "m"}`]};
   font-family: ${({ theme }) => theme.fonts.title};
   line-height: 130%;
-  font-size: ${({ weight }) => weight ?? 800};
+  font-weight: ${({ weight }) => weight ?? 800};
 `
 
 export const RegularText = styled.p<RegularTextProps>`
@@ -25,5 +25,5 @@ export const RegularText = styled.p<RegularTextProps>`
   font-size: ${({ theme, size }) => theme.fontSizes[`text-${size ?? "m"}`]};
   font-family: ${({ theme }) => theme.fonts.regular};
   line-height: 130%;
-  font-size: ${({ weight }) => weight ?? 400};
+  font-weight: ${({ weight }) => weight ?? 400};
 `;
