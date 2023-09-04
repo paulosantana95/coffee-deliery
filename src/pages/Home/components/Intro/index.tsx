@@ -6,9 +6,9 @@ import {
   IntroContainerItems,
   IntroContainerTitle,
   IntroContent,
-  SpanItems,
 } from "./styles";
 import { RegularText, TitleText } from "../../../../components/Typography";
+import { InfoWithIcons } from "../../../../components/InfoWithIcons";
 
 export function Intro() {
   return (
@@ -23,30 +23,26 @@ export function Intro() {
             hora
           </RegularText>
           <IntroContainerItems>
-            <div>
-              <SpanItems variant="yellow-dark">
-                <ShoppingCart size={16} weight="fill" />
-              </SpanItems>
-              <RegularText>Compra simples e segura</RegularText>
-            </div>
-            <div>
-              <SpanItems variant="base-text">
-                <Package size={16} weight="fill" />
-              </SpanItems>
-              <RegularText>Compra simples e segura</RegularText>
-            </div>
-            <div>
-              <SpanItems variant="yellow">
-                <Timer size={16} weight="fill" />
-              </SpanItems>
-              <RegularText>Compra simples e segura</RegularText>
-            </div>
-            <div>
-              <SpanItems variant="purple">
-                <Coffee size={16} weight="fill" />
-              </SpanItems>
-              <RegularText>Compra simples e segura</RegularText>
-            </div>
+            <InfoWithIcons
+              variant="yellow-dark"
+              icon={<ShoppingCart size={16} weight="fill" />}
+              info={<RegularText>Compra simples e segura</RegularText>}
+            />
+            <InfoWithIcons
+              variant="base-text"
+              icon={<Package size={16} weight="fill" />}
+              info={<RegularText>Embalagem mantém o café intacto</RegularText>}
+            />
+            <InfoWithIcons
+              variant="yellow"
+              icon={<Timer size={16} weight="fill" />}
+              info={<RegularText>Entrega rápida e rastreada</RegularText>}
+            />
+            <InfoWithIcons
+              variant="purple"
+              icon={<Coffee size={16} weight="fill" />}
+              info={<RegularText>O café chega fresquinho até você</RegularText>}
+            />
           </IntroContainerItems>
         </IntroContainerTitle>
         <IntroBannerImage>

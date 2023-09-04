@@ -31,27 +31,10 @@ export const IntroContainerItems = styled.div`
   column-gap: 2.5rem;
   row-gap: 1.25rem;
   
-  div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.75rem;
+  p {
+    white-space: nowrap;
   }
   `;
-
-interface SpanVariantProps {
-  variant: 'yellow-dark' | 'yellow' | 'purple-dark' | 'purple' | 'base-text';
-}
-
-export const SpanItems = styled.span<SpanVariantProps>`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  border-radius: 100%;
-  color: ${({ theme }) => theme.colors.white};
-  background: ${({ theme, variant }) => theme.colors[`${variant}`]}
-`;
 
 export const IntroBannerImage = styled.div`
   padding-top: 5.75rem;
