@@ -28,16 +28,37 @@ export const LinkButton = styled.button<LinkButtonProps>`
   justify-content: center;
   align-items: center;
   gap: 0.25rem;
-  border-radius: 5px;
+  border-radius: 6px;
   border: none;
   padding: 0.5rem;
+  position: relative;
   font-size: ${({ theme }) => theme.fontSizes['text-s']};
+
+  span {
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    top: calc(-1.25rem / 2);
+    right: calc(-1.25rem / 2);
+    color: ${({ theme }) => theme.colors.white};
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+
+  }
 
   ${({ theme, variant }) => css`
     background: ${theme.colors[`${variant}-light`]};
     color: ${variant === 'purple' ?
       theme.colors[variant] : theme.colors[`${variant}-dark`]};
-  `}
 
+    span {
+      background: ${theme.colors[`${variant}-dark`]};
+    }
+  `}
 
 `
