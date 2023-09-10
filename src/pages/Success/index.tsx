@@ -3,8 +3,30 @@ import { CheckoutDetailsContainer, SuccessCheckoutContainer } from "./styled";
 import illustration from "../../assets/Illustration.svg";
 import { InfoWithIcons } from "../../components/InfoWithIcons";
 import { MapPin, Clock, CurrencyDollar } from "phosphor-react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { OrderData } from "../Checkout";
+import { paymentMethods } from "../Checkout/components/CheckoutOrderForm/PaymentMethodOptions";
+import { useEffect } from "react";
+
+interface LocationType {
+  state: OrderData;
+}
 
 export function SuccessPage() {
+  const { state } = useLocation() as unknown as LocationType;
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!state) {
+      navigate("/");
+    }
+  }, []);
+
+  if (!state) {
+    return <></>;
+  }
+
   return (
     <SuccessCheckoutContainer className="container">
       <div>
@@ -21,9 +43,12 @@ export function SuccessPage() {
             icon={<MapPin weight="fill" />}
             info={
               <RegularText color="subtitle">
-                Entregar em <strong>Rua Tabajaras do Amor</strong>
+                Entregar em{" "}
+                <strong>
+                  {state.street}, {state.number}
+                </strong>
                 <br />
-                Fortaleza - CE
+                {state.district} - {state.city}, {state.uf}
               </RegularText>
             }
           />
@@ -45,7 +70,7 @@ export function SuccessPage() {
               <RegularText color="subtitle">
                 Pagamento na entrega
                 <br />
-                <strong>Cartão de Crédito</strong>
+                <strong>{paymentMethods[state.paymentMethod].label}</strong>
               </RegularText>
             }
           />

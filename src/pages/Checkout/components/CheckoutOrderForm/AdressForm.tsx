@@ -32,7 +32,6 @@ interface ErrorsType {
 
 export function AdressForm() {
   const { register, formState } = useFormContext();
-
   const { errors } = formState as unknown as ErrorsType;
 
   return (
