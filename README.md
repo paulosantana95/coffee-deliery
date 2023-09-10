@@ -1,27 +1,44 @@
-# React + TypeScript + Vite
+# Coffee Delivery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse projeto foi criado para completar o desafio da criação de um e-commerce de café feito com React utilizando o Vite para iniciação do projeto.
 
-Currently, two official plugins are available:
+## Fundamentos Práticados
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Estados
+- Imutabilidade do estado
+- Listas e chaves no ReactJS
+- Propriedades
+- Componentização
+- Context API
 
-## Expanding the ESLint configuration
+## Ferramentas Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- immer
+- phosphor-icon
+- zod
+- React Hook Forms
+- React Router
+- Styled Components
 
-- Configure the top-level `parserOptions` property like this:
+## Funcionalidades Aplicadas
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- Adicionar produtos ao carrinho
+- Contabilizar e calcular valor e número de produtos no carrinho
+- Listar os produtos na tela de Checkout
+- Preechimento dos dados para Delivery na tela de Checkout
+- Diminuir e aumentar quantidade de itens no Checkout
+- Deletar items no Checkout
+- Completar a compra
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Layout do Projeto:
+
+![screencapture-localhost-4000-2023-09-10-03_56_24](https://github.com/paulosantana95/coffee-deliery/assets/91387292/f45a547b-8a4f-49a8-8afa-5cd7e7af2291)
+
+
+![screencapture-localhost-4000-checkout-2023-09-10-03_57_47](https://github.com/paulosantana95/coffee-deliery/assets/91387292/8d4a2942-ee00-493e-8306-b096168635da)
+
+
+![screencapture-localhost-4000-checkout-2023-09-10-03_59_00](https://github.com/paulosantana95/coffee-deliery/assets/91387292/4e880934-95c9-4b86-8803-4f763096eab8)
+
+
+![screencapture-localhost-4000-success-2023-09-10-03_59_19](https://github.com/paulosantana95/coffee-deliery/assets/91387292/0cbf14e4-f726-4f6e-a8ae-5c17fc75cd6e)
