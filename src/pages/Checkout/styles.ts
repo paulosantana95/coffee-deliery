@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const CheckoutOrderContainer = styled.div`
+export const CheckoutOrderContainer = styled.form`
   margin-top: 2.5rem;
   display: flex;
   justify-content: space-between;

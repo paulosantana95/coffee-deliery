@@ -7,7 +7,7 @@ interface TitleTextProps {
 }
 
 interface RegularTextProps {
-  size?: "l" | "m" | "s";
+  size?: "l" | "m" | "s" | "xs";
   color?: "text" | "subtitle" | "label";
   weight?: string | number;
 }
